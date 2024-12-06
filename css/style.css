@@ -1,0 +1,251 @@
+/* Base styles */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --text-color: #2c3e50;
+  --light-bg: #ecf0f1;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+
+/* Header styles */
+.category-header {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.category-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.category-header h1 {
+  position: relative;
+  z-index: 2;
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+/* Search bar styles */
+.search {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.search input {
+  width: 100%;
+  padding: 15px 25px;
+  border: 2px solid var(--light-bg);
+  border-radius: 30px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--card-shadow);
+}
+
+.search input:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Location grid styles */
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.location-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--card-shadow);
+}
+
+.location-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.location-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.location-card:hover img {
+  transform: scale(1.05);
+}
+
+.location-card h3 {
+  color: var(--primary-color);
+  margin: 15px 20px;
+  font-size: 1.5rem;
+}
+
+.location-card p {
+  color: #666;
+  margin: 10px 20px;
+  line-height: 1.6;
+}
+
+.location-card .details {
+  padding: 20px;
+  border-top: 1px solid var(--light-bg);
+}
+
+/* Category-specific headers */
+.plages-header {
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600');
+}
+
+.jardins-header {
+  background-image: url('https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=1600');
+}
+
+.sites-culturels-header {
+  background-image: url('https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?w=1600');
+}
+
+.montagnes-header {
+  background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600');
+}
+
+.restaurants-header {
+  background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600');
+}
+
+.centres-commerciaux-header {
+  background-image: url('https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=1600');
+}
+
+.hotels-header {
+  background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600');
+}
+
+.activites-header {
+  background-image: url('https://images.unsplash.com/photo-1526485856375-9110812fbf35?w=1600');
+}
+
+.musees-header {
+  background-image: url('https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=1600');
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .category-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .locations-grid {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .search input {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Bootstrap overrides and enhancements */
+.btn-primary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-shadow);
+}
+/* Custom styles for hover effects */
+.card.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.hover-effect:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+/* Typography */
+.card-title {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+}
+
+
+/* Custom utilities */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.rounded-xl {
+  border-radius: 1rem;
+}
