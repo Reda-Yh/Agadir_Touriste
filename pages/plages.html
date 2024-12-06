@@ -1,40 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Plages - Agadir</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/nav.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <nav id="mainNav"></nav>
-    <main>
-        <header class="category-header plages-header">
-            <h1>Les Plages d'Agadir</h1>
-        </header>
-        <div class="search">
-            <input type="text" id="search-input" placeholder="Rechercher une plage..." onkeyup="searchLocations()">
-        </div>
-        <div class="locations-grid">
-            <div class="location-card">
-                <h3>Plage d'Agadir</h3>
-                <p>Avenue Hassan II</p>
-                <img src="../images/plage-agadir.jpg" alt="Plage d'Agadir">
-                <div class="details">
-                    <p>La plus célèbre plage d'Agadir, connue pour son sable doré et ses activités nautiques.</p>
-                </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Les Plages - Agadir</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/nav.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+    </head>
+    <body>
+        <nav id="mainNav"></nav>
+        <main>
+            <header class="category-header plages-header">
+                <h1>Les Plages d'Agadir</h1>
+            </header>
+            <div class="search">
+                <input type="text" id="search-input"
+                    placeholder="Rechercher une plage..."
+                    onkeyup="searchLocations()">
             </div>
-            <!-- Add more beach cards -->
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Découvrir Agadir. Tous droits réservés.</p>
-    </footer>
+            <div class="locations-grid">
+                <!-- Plage d'Agadir -->
+                <div class="location-card">
+                    <h3>Plage d'Agadir</h3>
+                    <p>Avenue Hassan II</p>
+                    <img
+                        src="https://media.gettyimages.com/id/1318574143/photo/agadir-beach-on-the-atlantic-ocean-in-morocco.jpg?b=1&s=612x612&w=0&k=20&c=NN_Dct6hq-cKK4eJMuRhsRKFeUKSK7FLnhe9qzuIKNU="
+                        alt="Plage d'Agadir">
+                    <div class="details">
+                        <p>La plus célèbre plage d'Agadir, connue pour son sable
+                            doré et ses activités nautiques.</p>
+                        <a href="https://goo.gl/maps/xyz123"
+                            target="_blank">Voir sur Google Maps</a>
+                    </div>
+                </div>
+                <!-- Plage Taghazout -->
+                <div class="location-card">
+                    <h3>Plage Taghazout</h3>
+                    <p>Taghazout</p>
+                    <img
+                        src="https://i.pinimg.com/originals/0f/42/63/0f4263bf5a3d3bb2ab514e19a2d310e4.jpg"
+                        alt="Plage Taghazout">
+                    <div class="details">
+                        <p>Une plage idéale pour les surfeurs, avec des vagues
+                            impressionnantes et un charmant village de
+                            pêcheurs.</p>
+                        <a href="https://goo.gl/maps/abc456"
+                            target="_blank">Voir sur Google Maps</a>
+                    </div>
+                </div>
+                <!-- Plage Imourane -->
+                <div class="location-card">
+                    <h3>Plage Imourane</h3>
+                    <p>Tamraght</p>
+                    <img
+                        src="https://countryhelper.com/media/entertainment/backgrounds/Plage_Imourane.webp"
+                        alt="Plage Imourane">
+                    <div class="details">
+                        <p>Connu pour ses eaux calmes, parfaites pour les
+                            familles et les amateurs de baignade.</p>
+                        <a href="https://goo.gl/maps/def789"
+                            target="_blank">Voir sur Google Maps</a>
+                    </div>
+                </div>
+                <!-- Plage Aghroud -->
+                <div class="location-card">
+                    <h3>Plage Aghroud</h3>
+                    <p>Aghroud</p>
+                    <img
+                        src="https://apollotravel.be/wp-content/uploads/2023/03/Plage-Aghroud-2-1024x768.jpeg"
+                        alt="Plage Aghroud">
+                    <div class="details">
+                        <p>Une plage paisible entourée de paysages naturels,
+                            idéale pour une escapade tranquille.</p>
+                        <a href="https://goo.gl/maps/ghi012"
+                            target="_blank">Voir sur Google Maps</a>
+                    </div>
+                </div>
+                <!-- Plage Tifnit -->
+                <div class="location-card">
+                    <h3>Plage Tifnit</h3>
+                    <p>Tifnit</p>
+                    <img
+                        src="https://explore-agadirsoussmassa.com/wp-content/uploads/2020/02/tifnit345.png"
+                        alt="Plage Tifnit">
+                    <div class="details">
+                        <p>Un village pittoresque avec une plage sauvage, prisée
+                            des amateurs de nature.</p>
+                        <a href="https://goo.gl/maps/jkl345"
+                            target="_blank">Voir sur Google Maps</a>
+                    </div>
+                </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/navigation.js"></script>
-    <script src="../js/search.js"></script>
-</body>
+            </div>
+        </main>
+        <!-- <footer>
+        <p>&copy; 2024 Découvrir Agadir. Tous droits réservés.</p>
+    </footer> -->
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../js/navigation.js"></script>
+        <script src="../js/search.js"></script>
+    </body>
 </html>

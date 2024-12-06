@@ -1,47 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activités - Agadir</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/nav.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <nav id="mainNav"></nav>
-    <main>
-        <header class="category-header activites-header">
-            <h1>Les Activités d'Agadir</h1>
-        </header>
-        <div class="search">
-            <input type="text" id="search-input" placeholder="Rechercher une activité..." onkeyup="searchLocations()">
-        </div>
-        <div class="locations-grid">
-            <div class="location-card">
-                <h3>Surf Taghazout</h3>
-                <p>Plage Taghazout</p>
-                <img src="../images/surf-taghazout.jpg" alt="Surf Taghazout">
-                <div class="details">
-                    <p>École de surf et location de matériel.</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Les Activités - Agadir</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/nav.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+    </head>
+    <body>
+        <nav id="mainNav"></nav>
+        <main>
+            <header class="category-header activites-header">
+                <h1>Les Activités d'Agadir</h1>
+            </header>
+            <div class="search">
+                <input type="text" id="search-input"
+                    placeholder="Rechercher une activité..."
+                    onkeyup="searchLocations()">
+            </div>
+            <div class="locations-grid">
+                <!-- Surf Taghazout -->
+                <div class="location-card">
+                    <h3>Surf Taghazout</h3>
+                    <p>Plage Taghazout</p>
+                    <img
+                        src="https://surfberbere.com/wp-content/uploads/2016/03/panoramas_surf_berbere_taghazout_surf_school_.jpg"
+                        alt="Surf Taghazout">
+                    <div class="details">
+                        <p>École de surf et location de matériel.</p>
+                        <a href="https://goo.gl/maps/xyz123"
+                            target="_blank">Voir sur Google Maps</a>
+                    </div>
+                </div>
+                <!-- Quad dans le désert -->
+                <div class="location-card">
+                    <h3>Quad dans le désert</h3>
+                    <p>Route de l'Atlas</p>
+                    <img
+                        src="https://images.teamtailor-cdn.com/images/s3/teamtailor-production/user_picture_800_crop-v4/image_uploads/dd21867f-db56-4613-b62a-528b9ea492f1/original.jpeg"
+                        alt="Quad dans le désert">
+                    <div class="details">
+                        <p>Excursions en quad dans les dunes et l'arrière-pays.</p>
+                        <a href="https://goo.gl/maps/abc456"
+                            target="_blank">Voir sur Google Maps</a>
+                    </div>
+                </div>
+                <!-- Marina Agadir -->
+                <div class="location-card">
+                    <h3>Marina Agadir</h3>
+                    <p>Port de plaisance</p>
+                    <img
+                        src="https://www.barcelo.com/guia-turismo/wp-content/uploads/2022/03/agadir-marina-888-1.jpg"
+                        alt="Marina Agadir">
+                    <div class="details">
+                        <p>Promenade, shopping et restaurants avec vue sur la mer.</p>
+                        <a href="https://goo.gl/maps/ghi567"
+                            target="_blank">Voir sur Google Maps</a>
+                    </div>
+                </div>
+                <!-- Crocoparc -->
+                <div class="location-card">
+                    <h3>Crocoparc</h3>
+                    <p>Route Nationale 8</p>
+                    <img
+                        src="https://media.tacdn.com/media/attractions-splice-spp-674x446/09/67/fa/35.jpg"
+                        alt="Crocoparc">
+                    <div class="details">
+                        <p>Parc aux crocodiles avec des jardins exotiques.</p>
+                        <a href="https://goo.gl/maps/jkl890"
+                            target="_blank">Voir sur Google Maps</a>
+                    </div>
+                </div>
+                <!-- Kasbah d'Agadir Oufella -->
+                <div class="location-card">
+                    <h3>Kasbah d'Agadir Oufella</h3>
+                    <p>Colline surplombant Agadir</p>
+                    <img
+                        src="https://www.agadir-oufella.ma/wp-content/uploads/2023/04/9.jpg"
+                        alt="Kasbah d'Agadir Oufella">
+                    <div class="details">
+                        <p>Site historique avec vue panoramique sur la ville.</p>
+                        <a href="https://goo.gl/maps/mno123"
+                            target="_blank">Voir sur Google Maps</a>
+                    </div>
                 </div>
             </div>
-            <div class="location-card">
-                <h3>Quad dans le désert</h3>
-                <p>Route de l'Atlas</p>
-                <img src="../images/quad-desert.jpg" alt="Quad dans le désert">
-                <div class="details">
-                    <p>Excursions en quad dans les dunes et l'arrière-pays.</p>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Découvrir Agadir. Tous droits réservés.</p>
-    </footer>
+        </main>
+        <!-- <footer>
+            <p>&copy; 2024 Découvrir Agadir. Tous droits réservés.</p>
+        </footer> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/navigation.js"></script>
-    <script src="../js/search.js"></script>
-</body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../js/navigation.js"></script>
+        <script src="../js/search.js"></script>
+    </body>
 </html>

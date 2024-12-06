@@ -16,6 +16,22 @@ body {
 }
 
 /* Header styles */
+
+.header {
+  background-image: url("https://www.agadir-oufella.ma/wp-content/uploads/2023/04/9.jpg");
+  color: #ffffff;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.619);
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
+  padding: 40px 20px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
 .category-header {
   background-size: cover;
   background-position: center;

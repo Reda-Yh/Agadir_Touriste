@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     nav.innerHTML = `
         <div class="logo-container nav-animated">
-            <img src="${isHomePage ? '' : '../'}images/CityMar-removebg-preview.png" alt="Logo" class="img-fluid">
+                    <img src="${isHomePage ? '' : '../'}Salford___Co.-removebg-preview.png" alt="Logo" class="img-fluid">
         </div>
         ${createNavLink('index', 'Accueil', isHomePage ? '' : 'index.html')}
         ${createNavLink('plages', 'Plages', prefix + 'plages.html')}
@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ${createNavLink('hotels', 'Hôtels', prefix + '../pages/hotels.html')}
         ${createNavLink('activites', 'Activités', prefix + '../pages/activites.html')}
         ${createNavLink('musees', 'Musées', prefix + '../pages/musees.html')}
+        ${createNavLink('piscines', 'piscines', prefix + '../pages/piscines.html')}
     `;
 
     // Add animation classes to location cards
