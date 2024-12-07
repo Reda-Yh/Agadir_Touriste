@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const prefix = isHomePage ? '' : '../';
 
     footer.innerHTML = `
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
         <footer class="footer">
             <div class="container">
                 <div class="row">
@@ -15,20 +16,21 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="col-md-4 footer-section">
                         <h3>Contact</h3>
                         <ul class="contact-info">
-                            <li><i class="fas fa-phone"></i> +212 528-XXX-XXX</li>
-                            <li><i class="fas fa-envelope"></i> contact@agadir-guide.ma</li>
+                            <li><i class="fas fa-phone"></i> +212 605-006-993 | Marouane Hajjouj </li>
+                            <li><i class="fas fa-phone"></i> +212 651-834-041 | Reda Yahya </li>
+                            <li><i class="fas fa-envelope"></i> Marouane.hajjouj@e-polytechnique.ma</li>
+                            <li><i class="fas fa-envelope"></i> Reda.yahya@e-polytechnique.ma</li>
                             <li><i class="fas fa-map-marker-alt"></i> Agadir, Maroc</li>
                         </ul>
                     </div>
                     
                     <div class="col-md-4 footer-section">
-                        <h3>Suivez-nous</h3>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
+                        <h3>Suivez-nous</h3><div class="social-links">
+    <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+</div>
+
                     </div>
                 </div>
             </div>

@@ -18,11 +18,11 @@ body {
 /* Header styles */
 
 .header {
-  background-image: url("https://www.agadir-oufella.ma/wp-content/uploads/2023/04/9.jpg");
+  background-image: url("/images/9.webp");
   color: #ffffff;
   background-blend-mode: overlay;
   background-color: rgba(0, 0, 0, 0.619);
-  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
+  text-shadow: 0px 0px 5px rgb(255, 60, 0);
   padding: 40px 20px;
   text-align: center;
   background-size: cover;
@@ -77,6 +77,7 @@ body {
   font-size: 1.1rem;
   transition: all 0.3s ease;
   box-shadow: var(--card-shadow);
+  
 }
 
 .search input:focus {
@@ -138,7 +139,7 @@ body {
 
 /* Category-specific headers */
 .plages-header {
-  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600');
+  background-image: url('/images/photo-1507525428034-b723cf961d3e.jpg');
 }
 
 .jardins-header {
@@ -146,31 +147,34 @@ body {
 }
 
 .sites-culturels-header {
-  background-image: url('https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?w=1600');
+  background-image: url('/images/photo-1585320806297-9794b3e4eeae.jpg');
 }
 
 .montagnes-header {
-  background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600');
+  background-image: url('/images/photo-1464822759023-fed622ff2c3b.jpg');
 }
 
 .restaurants-header {
-  background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600');
+  background-image: url('/images/photo-1517248135467-4c7edcad34c4.jpg');
 }
 
 .centres-commerciaux-header {
-  background-image: url('https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=1600');
+  background-image: url('/images/photo-1519567241046-7f570eee3ce6.jpg');
 }
 
 .hotels-header {
-  background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600');
+  background-image: url('/images/photo-1566073771259-6a8506099945.jpg');
 }
 
 .activites-header {
-  background-image: url('https://images.unsplash.com/photo-1526485856375-9110812fbf35?w=1600');
+  background-image: url('/images/photo-1526485856375-9110812fbf35.jpg');
 }
 
 .musees-header {
-  background-image: url('https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=1600');
+  background-image: url('/images/photo-1518998053901-5348d3961a04.jpg');
+}
+.piscines-header {
+  background-image: url('/images/picine.jpg');
 }
 
 /* Responsive styles */
