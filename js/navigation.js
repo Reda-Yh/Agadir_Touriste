@@ -1,24 +1,24 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const nav = document.getElementById('mainNav');
     const isHomePage = window.location.pathname === '/' || window.location.pathname.endsWith('index.html');
-    const prefix = isHomePage ? '../pages/' : '../pages/';
+    const prefix = isHomePage ? './pages/' : './'; // Ajuste le préfixe correctement
     const currentPage = window.location.pathname.split('/').pop().replace('.html', '');
-    
+
     nav.innerHTML = `
         <div class="logo-container nav-animated">
-                    <img src="../Salford___Co.-removebg-preview.png" alt="Logo" class="img-fluid">
+            <img src="${isHomePage ? './Salford___Co.-removebg-preview.png' : '../Salford___Co.-removebg-preview.png'}" alt="Logo" class="img-fluid">
         </div>
-        ${createNavLink('index', 'Accueil', isHomePage ? '' : 'index.html')}
+        ${createNavLink('index', 'Accueil', isHomePage ? './index.html' : '../index.html')}
         ${createNavLink('plages', 'Plages', prefix + 'plages.html')}
-        ${createNavLink('jardins', 'Jardins', prefix + '../pages/jardins.html')}
-        ${createNavLink('sites-culturels', 'Sites Culturels', prefix + '../pages/sites-culturels.html')}
-        ${createNavLink('montagnes', 'Montagnes', prefix + '../pages/montagnes.html')}
-        ${createNavLink('restaurants', 'Restaurants', prefix + '../pages/restaurants.html')}
-        ${createNavLink('centres-commerciaux', 'Centres Commerciaux', prefix + '../pages/centres-commerciaux.html')}
-        ${createNavLink('hotels', 'Hôtels', prefix + '../pages/hotels.html')}
-        ${createNavLink('activites', 'Activités', prefix + '../pages/activites.html')}
-        ${createNavLink('musees', 'Musées', prefix + '../pages/musees.html')}
-        ${createNavLink('piscines', 'piscines', prefix + '../pages/piscines.html')}
+        ${createNavLink('jardins', 'Jardins', prefix + 'jardins.html')}
+        ${createNavLink('sites-culturels', 'Sites Culturels', prefix + 'sites-culturels.html')}
+        ${createNavLink('montagnes', 'Montagnes', prefix + 'montagnes.html')}
+        ${createNavLink('restaurants', 'Restaurants', prefix + 'restaurants.html')}
+        ${createNavLink('centres-commerciaux', 'Centres Commerciaux', prefix + 'centres-commerciaux.html')}
+        ${createNavLink('hotels', 'Hôtels', prefix + 'hotels.html')}
+        ${createNavLink('activites', 'Activités', prefix + 'activites.html')}
+        ${createNavLink('musees', 'Musées', prefix + 'musees.html')}
+        ${createNavLink('piscines', 'Piscines', prefix + 'piscines.html')}
     `;
 
     // Add animation classes to location cards
