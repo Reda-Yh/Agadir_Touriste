@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     nav.innerHTML = `
         <div class="logo-container nav-animated">
-                    <img src="${isHomePage ? '' : '../'}Salford___Co.-removebg-preview.png" alt="Logo" class="img-fluid">
+                    <img src="../Salford___Co.-removebg-preview.png" alt="Logo" class="img-fluid">
         </div>
         ${createNavLink('index', 'Accueil', isHomePage ? '' : 'index.html')}
         ${createNavLink('plages', 'Plages', prefix + 'plages.html')}

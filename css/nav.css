@@ -1,128 +1,139 @@
 /* Navigation styles */
 nav {
-  background: linear-gradient(135deg, #2c3e50, #3498db);
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 250px;
-  z-index: 1000;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 1000;
+    overflow-y: auto;
 }
 
 nav .logo-container {
-  text-align: center;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 nav .logo-container img {
-  max-width: 100px;
-  height: auto;
-  transition: transform 0.3s ease;
+    max-width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
 nav .logo-container img:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 nav a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 0.3rem ;
-  margin: 0.5rem 0;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  font-weight: 500;
-  position: relative;
-  overflow: hidden;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
 }
-/* .logo-container{
-
-} */
 
 nav a:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateX(5px);
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+    color: white;
 }
 
 nav a::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 3px;
-  background: #e74c3c;
-  transform: scaleY(0);
-  transition: transform 0.3s ease;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: #e74c3c;
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
 }
 
 nav a:hover::before {
-  transform: scaleY(1);
+    transform: scaleY(1);
 }
 
 /* Main content adjustment */
 main {
-  margin-left: 250px;
-  padding: 2rem;
-  min-height: 100vh;
+    margin-left: 250px;
+    padding: 2rem;
+    min-height: calc(100vh - 400px); /* Adjust for footer height */
 }
 
 /* Responsive navigation */
 @media (max-width: 768px) {
-  nav {
-    position: fixed;
-    bottom: 0;
-    top: auto;
-    width: 100%;
-    height: auto;
-    padding: 0.5rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+    nav {
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow-x: auto;
+    }
 
-  nav .logo-container {
-    display: none;
-  }
+    nav .logo-container {
+        display: none;
+    }
 
-  nav a {
-    padding: 0.5rem;
-    margin: 0;
-    font-size: 0.8rem;
-    text-align: center;
-  }
+    nav a {
+        padding: 0.5rem;
+        margin: 0 0.3rem;
+        font-size: 0.8rem;
+        text-align: center;
+        white-space: nowrap;
+    }
 
-  nav a::before {
-    display: none;
-  }
+    nav a::before {
+        display: none;
+    }
 
-  main {
-    margin-left: 0;
-    margin-bottom: 60px;
-    padding: 1rem;
-  }
+    main {
+        margin-left: 0;
+        margin-bottom: 60px;
+        padding: 1rem;
+    }
+
+    nav::-webkit-scrollbar {
+        height: 3px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+    }
 }
 
 /* Active link styles */
 nav a.active {
-  background: rgba(255, 255, 255, 0.2);
-  font-weight: 600;
+    background: rgba(255, 255, 255, 0.2);
+    font-weight: 600;
 }
 
 /* Navigation animations */
 @keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 .nav-animated {
-  animation: slideIn 0.3s ease-out;
+    animation: slideIn 0.3s ease-out;
 }
