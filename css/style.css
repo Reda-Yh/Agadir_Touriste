@@ -377,3 +377,12 @@ body {
       justify-content: center;
   }
 }
+
+.mail{
+  text-decoration: none;
+  color: white;
+}
+
+.mail:hover{
+  color: orangered;
+}

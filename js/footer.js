@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         <ul class="contact-info">
                             <li><i class="fas fa-phone"></i> +212 605-006-993 | Marouane Hajjouj </li>
                             <li><i class="fas fa-phone"></i> +212 651-834-041 | Reda Yahya </li>
-                            <li><i class="fas fa-envelope"></i> Marouane.hajjouj@e-polytechnique.ma</li>
-                            <li><i class="fas fa-envelope"></i> Reda.yahya@e-polytechnique.ma</li>
+                            <li><a href="mailto:Marouane.hajjouj@e-polytechnique.ma" class="mail" ><i class="fas fa-envelope"></i> Marouane.hajjouj@e-polytechnique.ma</a></li>
+                            <li><a href="mailto:Reda.yahya@e-polytechnique.ma" class="mail" ><i class="fas fa-envelope"></i> Reda.yahya@e-polytechnique.ma</a></li>
                             <li><i class="fas fa-map-marker-alt"></i> Agadir, Maroc</li>
                         </ul>
                     </div>
