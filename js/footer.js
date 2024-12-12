@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     
                     <div class="col-md-4 footer-section">
                         <h3>Suivez-nous</h3><div class="social-links">
-    <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
-    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/reda-yahya-920976253/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/Reda-Yh" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://discord.gg/tckCRRqUaa" aria-label="Discord"><i class="fab fa-discord"></i></a>
 </div>
 
                     </div>
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
             <div class="footer-bottom">
                 <div class="container">
-                    <p>&copy; 2024 Agadir Guide. Tous droits réservés.</p>
+                    <p>&copy; 2024 Reda Yahya & Marouane Hajjouj. Tous droits réservés.</p>
                 </div>
             </div>
         </footer>
